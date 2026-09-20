@@ -2,15 +2,18 @@
 
 <img src="./src/assets/Vica%20Web%20Solutions2.png" alt="Vica Web Solutions" width="240" />
 
-# Vica i18n
+# Vica i18n Academy
 
+A bilingual React learning project by Vica Web Solutions.
+
+**أكاديمية عملية ثنائية اللغة لتعلّم i18n في React، مقدمة من Vica Web Solutions**
 
 [![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)](https://react.dev/)
 [![i18next](https://img.shields.io/badge/i18next-23-26A69A?logo=i18next&logoColor=white)](https://www.i18next.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 
-[Live Demo](https://i18n-learn.vercel.app/) · [Repository](https://github.com/mabozed/i18) · [English](#english) · [العربية](#العربية)
+[Live Demo](https://i18n-learn.vercel.app/) · [Repository](https://github.com/vica-web/i18n) · [English](#english) · [العربية](#العربية)
 
 </div>
 
@@ -41,8 +44,8 @@ This project is a practical bilingual learning experience for React localization
 ### Run locally
 
 ```bash
-git clone https://github.com/mabozed/i18.git
-cd i18
+git clone https://github.com/vica-web/i18n.git
+cd i18n
 npm install
 npm run dev
 ```
@@ -74,8 +77,8 @@ Then open the local Vite URL and switch between `EN` and `AR`.
 ### التشغيل محليًا
 
 ```bash
-git clone https://github.com/mabozed/i18.git
-cd i18
+git clone https://github.com/vica-web/i18n.git
+cd i18n
 npm install
 npm run dev
 ```

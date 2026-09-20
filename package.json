@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "A bilingual React internationalization learning project by Vica Web Solutions.",
   "author": "Vica Web Solutions",
-  "homepage": "https://github.com/mabozed/i18",
+  "homepage": "https://github.com/vica-web/i18n",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mabozed/i18.git"
+    "url": "https://github.com/vica-web/i18n.git"
   },
   "keywords": [
     "i18next",
