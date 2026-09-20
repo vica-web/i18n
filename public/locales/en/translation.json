@@ -1,0 +1,290 @@
+{
+  "advanced": {
+    "description": "Once the basics work, these features help larger applications stay modular, resilient, and easier to translate.",
+    "detection": {
+      "description": "Check a saved choice first, then fall back to the browser preference for a familiar first visit.",
+      "title": "Control language detection"
+    },
+    "dynamic": {
+      "description": "Extraction tools understand literal keys best. Avoid building key names at runtime, or keep an explicit map of every possible key.",
+      "title": "Keep keys discoverable"
+    },
+    "eyebrow": "Beyond the basics",
+    "fallback": {
+      "description": "Choose a reliable default language so users still see meaningful content when a requested value is unavailable.",
+      "title": "Design a fallback strategy"
+    },
+    "namespaces": {
+      "description": "Split large catalogs by feature or route so teams can load and maintain smaller, focused resource files.",
+      "title": "Scale with namespaces"
+    },
+    "title": "Tools for a growing application",
+    "trans": {
+      "description": "Use the Trans component only when a translated sentence needs links, emphasis, or other React elements inside it.",
+      "title": "Translate rich content"
+    }
+  },
+  "architecture": {
+    "backend": {
+      "description": "The HTTP backend requests the correct resource file when a language is activated.",
+      "title": "Load on demand"
+    },
+    "description": "Each part has one clear responsibility. Together they keep your interface fast, organized, and easy to extend.",
+    "engine": {
+      "description": "i18next resolves keys, variables, fallback rules, and language-specific plural forms.",
+      "title": "Resolve the message"
+    },
+    "eyebrow": "How the pieces connect",
+    "note": "Changing the language triggers React to render the same components with the matching resource values.",
+    "react": {
+      "description": "Your component requests a key through the t function provided by useTranslation.",
+      "title": "Request a key"
+    },
+    "resources": {
+      "description": "JSON resources keep interface copy separate from components and organized by language.",
+      "title": "Return translated text"
+    },
+    "title": "A simple flow with clear responsibilities"
+  },
+  "brand": {
+    "academy": "Vica",
+    "initiative": "An educational content",
+    "logoAlt": "Vica Web Solutions logo"
+  },
+  "common": {
+    "copied": "Copied",
+    "copy": "Copy"
+  },
+  "company": {
+    "description": "This open educational experience was designed by Vica Web Solutions to turn internationalization from scattered configuration into a clear, practical learning path. It combines explanation, live examples, RTL support, and production-minded tooling in one bilingual reference.",
+    "eyebrow": "Presented by Vica Web Solutions",
+    "repository": "Open the GitHub repository",
+    "title": "Practical knowledge, built to be shared",
+    "values": {
+      "bilingual": {
+        "description": "Arabic and English receive equal attention in content, layout, and direction.",
+        "title": "Bilingual by design"
+      },
+      "open": {
+        "description": "The repository and guides are structured for learning, reuse, and contribution.",
+        "title": "Open knowledge"
+      },
+      "practical": {
+        "description": "Every concept is paired with code, visual explanation, or a live interaction.",
+        "title": "Practice first"
+      }
+    }
+  },
+  "counter": {
+    "decrease": "Decrease lesson count",
+    "increase": "Increase lesson count"
+  },
+  "examples": {
+    "basic": {
+      "description": "Pass a stable translation key to t and render the returned text.",
+      "result": "Welcome to the i18n demo!",
+      "title": "Basic translation"
+    },
+    "description": "Change the language or counter and watch i18next select the correct value immediately.",
+    "eyebrow": "Interactive playground",
+    "interpolation": {
+      "description": "Insert safe, reusable values without splitting or rebuilding translated sentences.",
+      "result": "Hello, {{name}}! Glad you are here.",
+      "title": "Dynamic values"
+    },
+    "plural": {
+      "description": "Pass count and let i18next apply the plural rules of the active language.",
+      "result_one": "{{count}} lesson",
+      "result_other": "{{count}} lessons",
+      "title": "Smart plurals"
+    },
+    "title": "See the essential patterns in action"
+  },
+  "faq": {
+    "description": "Quick answers to the problems developers most often meet when connecting React to translation resources.",
+    "eyebrow": "Troubleshooting",
+    "item1": {
+      "answer": "Check the key spelling, letter case, active namespace, JSON syntax, and backend loadPath. i18next returns the key when it cannot resolve a value.",
+      "question": "Why does the interface show the key instead of the translation?"
+    },
+    "item2": {
+      "answer": "Enable localStorage in the detector order and caches arrays. The detector can then reuse the user's explicit selection after refresh.",
+      "question": "Why does the language reset when the page reloads?"
+    },
+    "item3": {
+      "answer": "Changing the i18next language does not set HTML direction automatically. Update document.documentElement.dir to rtl for Arabic and ltr for English.",
+      "question": "Why is Arabic still displayed in an LTR layout?"
+    },
+    "item4": {
+      "answer": "Static analysis cannot predict every runtime value. Prefer literal keys or an explicit key map, then run extraction and status checks again.",
+      "question": "Why did the CLI miss a dynamic translation key?"
+    },
+    "title": "Common questions, practical answers"
+  },
+  "footer": {
+    "backToTop": "Back to top",
+    "note": "A practical bilingual reference for React internationalization"
+  },
+  "hero": {
+    "action": "Start learning",
+    "byCompany": "An educational project by Vica Web Solutions",
+    "demoCard": {
+      "description": "Switch between Arabic and English above",
+      "title": "This page is the demo"
+    },
+    "description": "Learn the complete React localization workflow—from the first install to RTL layouts, plural rules, and automatic key extraction.",
+    "eyebrow": "A visual i18next learning path",
+    "secondaryAction": "Explore the CLI",
+    "title": "Build for\nevery language."
+  },
+  "languages": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "languageSwitcher": {
+    "label": "Choose a language"
+  },
+  "metrics": {
+    "coverage": "Translation coverage",
+    "direction": "Direction support",
+    "keys": "Live translation keys",
+    "languages": "Demo languages"
+  },
+  "nav": {
+    "advanced": "Deep dive",
+    "examples": "Examples",
+    "label": "Main navigation",
+    "learn": "Learn",
+    "toolkit": "CLI toolkit"
+  },
+  "practices": {
+    "description": "Small decisions make multilingual projects easier to translate, test, and maintain as they grow.",
+    "eyebrow": "Production checklist",
+    "item1": {
+      "description": "Prefer descriptive paths such as checkout.payment.failed over vague or numbered keys.",
+      "title": "Name keys by meaning"
+    },
+    "item2": {
+      "description": "Keep complete sentences together because word order differs between languages.",
+      "title": "Do not translate fragments"
+    },
+    "item3": {
+      "description": "Pass names and values through interpolation instead of joining strings manually.",
+      "title": "Interpolate dynamic data"
+    },
+    "item4": {
+      "description": "Always pass a numeric count so i18next can choose the correct language form.",
+      "title": "Respect plural rules"
+    },
+    "item5": {
+      "description": "Synchronize the document language and direction whenever the active language changes.",
+      "title": "Update lang and dir"
+    },
+    "item6": {
+      "description": "Run extraction and status checks before releases to catch missing resources early.",
+      "title": "Validate before shipping"
+    },
+    "title": "Habits that keep localization healthy"
+  },
+  "setup": {
+    "description": "Follow seven practical stages—from installing the packages and writing resources to switching direction and remembering the user's language.",
+    "eyebrow": "From zero to bilingual",
+    "mapLabel": "Learning map",
+    "step1": {
+      "description": "Install the core engine, React bindings, HTTP resource loader, and browser language detector.",
+      "point1": "i18next manages language rules and resources.",
+      "point2": "react-i18next connects the engine to components.",
+      "point3": "Backend and detector handle loading and selection.",
+      "shortTitle": "Install packages",
+      "title": "Install the required packages"
+    },
+    "step2": {
+      "description": "Create a predictable folder for every locale so the HTTP backend can build resource URLs automatically.",
+      "point1": "Keep locale files inside the public directory.",
+      "point2": "Use ISO language codes such as en and ar.",
+      "point3": "Start with one translation namespace.",
+      "shortTitle": "Create resources",
+      "title": "Organize your locale files"
+    },
+    "step3": {
+      "description": "Write matching keys in every language file, then translate values without changing the key structure.",
+      "point1": "Group related keys into nested objects.",
+      "point2": "Use interpolation for names and changing values.",
+      "point3": "Add every plural form required by the language.",
+      "shortTitle": "Write translations",
+      "title": "Create clear translation resources"
+    },
+    "step4": {
+      "description": "Register the plugins, list supported languages, select a fallback, and point the backend to your JSON files.",
+      "point1": "Register plugins before calling init.",
+      "point2": "Use English when a requested locale is unavailable.",
+      "point3": "Load JSON resources through a predictable path.",
+      "shortTitle": "Configure i18next",
+      "title": "Connect the i18next engine"
+    },
+    "step5": {
+      "description": "Import the configuration once, before React renders any component that calls useTranslation.",
+      "point1": "Import i18n before importing or rendering App.",
+      "point2": "One global initialization is enough.",
+      "point3": "Components receive updates through the React binding.",
+      "shortTitle": "Initialize the app",
+      "title": "Start i18next before React renders"
+    },
+    "step6": {
+      "description": "Call useTranslation inside a component, render values with t, and switch language with changeLanguage.",
+      "point1": "Use t with a stable key to render text.",
+      "point2": "Read resolvedLanguage for the active locale.",
+      "point3": "changeLanguage updates translated components instantly.",
+      "shortTitle": "Translate React",
+      "title": "Use translations inside components"
+    },
+    "step7": {
+      "description": "Synchronize HTML language and direction, while the detector stores the selected locale for later visits.",
+      "point1": "Set lang for browsers and assistive technology.",
+      "point2": "Use rtl for Arabic and ltr for English.",
+      "point3": "Cache the choice in localStorage.",
+      "shortTitle": "Support RTL",
+      "title": "Finish with direction and persistence"
+    },
+    "tip": {
+      "description": "Import src/i18n.js once in main.jsx before React renders the application.",
+      "title": "Do not miss this step"
+    },
+    "title": "Build a bilingual interface from the ground up"
+  },
+  "toolkit": {
+    "commands": {
+      "extract": {
+        "description": "Scan once and update locale files.",
+        "title": "Extract keys"
+      },
+      "status": {
+        "description": "Find missing values and view coverage.",
+        "title": "Check coverage"
+      },
+      "watch": {
+        "description": "Re-extract whenever source changes.",
+        "title": "Watch files"
+      }
+    },
+    "config": {
+      "description": "Tell the CLI which languages and source files it should manage, and where resource files belong.",
+      "title": "Create the extraction config"
+    },
+    "description": "Stop copying keys by hand. The official CLI scans your source, updates locale resources, and reports untranslated content.",
+    "eyebrow": "Automatic key extraction",
+    "install": {
+      "description": "Keep the command-line tool in development dependencies because it is not shipped to the browser.",
+      "title": "Install i18next-cli"
+    },
+    "official": "Official toolkit recommended by i18next",
+    "title": "Let the CLI maintain your translation catalog",
+    "workflow": {
+      "step1": "Write a t() key",
+      "step2": "Extract keys",
+      "step3": "Translate values",
+      "step4": "Check status",
+      "title": "Daily workflow"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "vica-i18n-academy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A bilingual React internationalization learning project by Vica Web Solutions.",
+  "author": "Vica Web Solutions",
+  "homepage": "https://github.com/mabozed/i18",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mabozed/i18.git"
+  },
+  "keywords": [
+    "i18next",
+    "react-i18next",
+    "internationalization",
+    "localization",
+    "rtl",
+    "arabic",
+    "education",
+    "vica-web-solutions"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "i18n:extract": "i18next-cli extract",
+    "i18n:watch": "i18next-cli extract --watch",
+    "i18n:status": "i18next-cli status",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "i18next": "^23.15.1",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^1.0.10",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "i18next-cli": "^1.74.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^5.4.1"
+  }
+}
