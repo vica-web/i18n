@@ -2,11 +2,8 @@
 
 <img src="./src/assets/Vica%20Web%20Solutions2.png" alt="Vica Web Solutions" width="240" />
 
-# Vica i18n Academy
+# Vica i18n
 
-A bilingual React learning project by Vica Web Solutions.
-
-**أكاديمية عملية ثنائية اللغة لتعلّم i18n في React، مقدمة من Vica Web Solutions**
 
 [![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)](https://react.dev/)
 [![i18next](https://img.shields.io/badge/i18next-23-26A69A?logo=i18next&logoColor=white)](https://www.i18next.com/)
