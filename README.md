@@ -316,7 +316,5 @@ GitHub Actions runs the same checks automatically for pushes and pull requests t
 
 <div align="center">
 
-Designed and maintained as an educational initiative by **Vica Web Solutions**.  
-صُمّم ويُطوّر كمبادرة تعليمية من **Vica Web Solutions**.
-
+Designed and maintained as an educational initiative by **Vica Web Solutions**. 
 </div>
